@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FRACETCG registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="imagecontainer">
+			<div class="logostrip">FRACE</div>
+		</div>
+		<div id="main">
+			<div class="text">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+					voluptates! Repellendus saepe aliquid assumenda eos ut quod cum
+					sapiente, fugiat cumque quibusdam non, dicta voluptatum voluptate nisi
+					nostrum aut adipisci minima delectus quo omnis dolores, voluptates
+					eligendi molestiae? Aliquam sed quod possimus incidunt fugiat
+					necessitatibus maiores voluptatum architecto blanditiis tempore?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+					excepturi perspiciatis quas dolorum quos aliquam?
+				</p>
+			</div>
+			<form action="#" id="regform">
+					<div class="input-wrapper">
+						<label for="firstname">FIRST NAME</label
+						><input type="text" id="firstname" name="firstname" required />
+					</div>
+          <div class="input-wrapper">
+            <label for="lastname">LAST NAME</label
+            ><input type="text" id="lastname" name="lastname" required />
+          </div>
+					<div class="input-wrapper">
+						<label for="email">EMAIL</label
+						><input type="email" id="email" name="email" required />
+					</div>
+          
+					<div class="input-wrapper">
+            <label for="phonenumber">PHONE NUMBER</label
+              ><input type="tel" id="phonenumber" name="phonenumber" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="password">PASSWORD</label
+              ><input type="password" id="password" name="password" required />
+            </div>
+					<div class="input-wrapper">
+						<label for="confirmpassword"> CONFIRM PASSWORD</label
+						><input
+							type="password"
+							id="confirmpassword"
+							name="confirmpassword"
+							required
+						/>
+					</div>
+			</form>
+			<div>
+				<button type="submit" form="regform">Create Account</button>
+				<p>Already have an account? <a href="#">Log in</a></p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --darkbg: #413554;
+  --lightbg: #f0f0fb;
+  --text-lightalt: #ebe9e9;
+
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: var(--lightbg);
+  display: flex;
+  flex: row wrap;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.imagecontainer { /* then media query for size on mobile*/
+  background-image: url(./sources/moon.jpg);
+  background-position: center;
+  overflow: hidden;
+  width: min(640px,35%);
+  flex: 1 0 auto;
+  height: 100vh;
+}
+.logostrip {
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.237);
+  color: var(--text-lightalt);
+  height: 200px;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 900px;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 1em;
+  padding-inline: 2%;
+}
+@media (max-width: 641px) {
+  body {
+    flex-direction: column;
+  }
+  .imagecontainer {
+    height: 200px;
+    width: 100%;
+    background-position: top;
+  }
+  .logostrip {
+  margin-top: 0px;
+  height: 200px;
+  font-size: 10vw;
+}
+  .text {
+    padding-top: 1em;
+  display: flex;
+  padding-inline: 2%;
+  }
+  .input-wrapper {
+    max-width: 250px;
+  }
+  
+}
+.text {
+  padding-top: 1em;
+  align-items: center;
+  display: flex;
+  padding-inline: 5%;
+  flex-direction: column;
+  row-gap: 2em;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
+#main > form {
+  border-top: solid 3px var(--text-lightalt);
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 300px;
+}
+#main > div:last-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  justify-content: flex-start;
+  align-items: center;
+}
+#main > div:last-child > button {
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: rgb(244, 192, 96);
+  color: var(--black);
+}
+#main > div:last-child > button:hover {
+  border: solid 2px var(--black);
+  transform: scale(1.05);
+}
+label {
+  color: var(--darkbg);
+}
